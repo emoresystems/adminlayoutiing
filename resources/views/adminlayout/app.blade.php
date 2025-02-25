@@ -27,8 +27,17 @@
             <div class="bg-white shadow p-4 flex justify-between items-center">
                 <h1 class="text-xl font-semibold">{{ config('app.name') }}</h1>
                 <div class="flex items-center space-x-4">
-                    <span>Admin</span>
-                    <button class="bg-red-500 text-white px-4 py-2 rounded">Logout</button>
+
+                    <form action="{{ route('profile.edit') }}" method="get">
+                        @csrf
+                        <button>Admin</button>
+                    </form>
+
+                    <form action="{{ route('logout') }}" method="post">
+                        @csrf
+                        <button class="bg-red-500 text-white px-4 py-2 rounded">Logout</button>
+                    </form>
+
                 </div>
             </div>
             <!-- content here -->

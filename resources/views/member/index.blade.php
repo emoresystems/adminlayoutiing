@@ -26,6 +26,7 @@
             <button type="submit" style="background-color: red; color:white; padding:5px;">Delete member</button>
 
         </form>
+        <a href="{{ route('members.edit', $member->id) }}">Edit member</a>
 
         @endforeach
     </div>
