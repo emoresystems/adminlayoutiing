@@ -16,7 +16,7 @@
         <div class="container mx-auto flex justify-between items-center">
             <a href="/" class="text-xl font-semibold">{{ config('app.name') }}</a>
             <div class="space-x-4">
-                <a href="/home" class="hover:underline">Home</a>
+                <a href="/" class="hover:underline">Home</a>
                 <a href="/showMembers" class="hover:underline">Members</a>
                 <a href="/about" class="hover:underline">About</a>
                 <a href="/login" class="hover:underline">Login</a>

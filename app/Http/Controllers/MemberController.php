@@ -80,7 +80,7 @@ class MemberController extends Controller
         $member = Member::findOrFail($id);
         $member->update($validatedData);
 
-        return redirect()->route('members.index')->with('success', 'member created success fully');
+        return redirect()->route('members.index')->with('success', 'member edited success fully');
     }
 
     /**
